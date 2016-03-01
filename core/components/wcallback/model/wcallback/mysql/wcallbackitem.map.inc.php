@@ -7,7 +7,10 @@ $xpdo_meta_map['wCallBackItem']= array (
   'fields' => 
   array (
     'name' => '',
-    'description' => '',
+    'mail' => '',
+    'phone' => '',
+    'category' => '',
+    'date' => NULL,
     'active' => 1,
   ),
   'fieldMeta' => 
@@ -20,12 +23,35 @@ $xpdo_meta_map['wCallBackItem']= array (
       'null' => false,
       'default' => '',
     ),
-    'description' => 
+    'mail' => 
     array (
-      'dbtype' => 'text',
-      'phptype' => 'text',
+      'dbtype' => 'varchar',
+      'precision' => '100',
+      'phptype' => 'string',
       'null' => true,
       'default' => '',
+    ),
+    'phone' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '100',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'category' => 
+    array (
+      'dbtype' => 'varchar',
+      'precision' => '100',
+      'phptype' => 'string',
+      'null' => true,
+      'default' => '',
+    ),
+    'date' => 
+    array (
+      'dbtype' => 'datetime',
+      'phptype' => 'datetime',
+      'null' => true,
     ),
     'active' => 
     array (
@@ -47,22 +73,6 @@ $xpdo_meta_map['wCallBackItem']= array (
       'columns' => 
       array (
         'name' => 
-        array (
-          'length' => '',
-          'collation' => 'A',
-          'null' => false,
-        ),
-      ),
-    ),
-    'active' => 
-    array (
-      'alias' => 'active',
-      'primary' => false,
-      'unique' => false,
-      'type' => 'BTREE',
-      'columns' => 
-      array (
-        'active' => 
         array (
           'length' => '',
           'collation' => 'A',

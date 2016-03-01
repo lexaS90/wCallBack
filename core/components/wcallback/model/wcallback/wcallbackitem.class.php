@@ -1,7 +1,2 @@
 <?php
-
-/**
- * @package wcallback
- */
-class wCallBackItem extends xPDOSimpleObject {
-}
+class wCallBackItem extends xPDOSimpleObject {}

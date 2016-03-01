@@ -2,16 +2,7 @@
 
 $chunks = array();
 
-$tmp = array(
-	'tpl.wCallBack.item' => array(
-		'file' => 'item',
-		'description' => '',
-	),
-	'tpl.wCallBack.office' => array(
-		'file' => 'office',
-		'description' => '',
-	),
-);
+$tmp = array();
 
 // Save chunks for setup options
 $BUILD_CHUNKS = array();

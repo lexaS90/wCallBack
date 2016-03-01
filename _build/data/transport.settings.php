@@ -2,14 +2,7 @@
 
 $settings = array();
 
-$tmp = array(/*
-	'some_setting' => array(
-		'xtype' => 'combo-boolean',
-		'value' => true,
-		'area' => 'wcallback_main',
-	),
-	*/
-);
+$tmp = array();
 
 foreach ($tmp as $k => $v) {
 	/* @var modSystemSetting $setting */

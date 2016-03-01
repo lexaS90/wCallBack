@@ -4,7 +4,7 @@ $menus = array();
 
 $tmp = array(
 	'wcallback' => array(
-		'description' => 'wcallback_menu_desc',
+		'description' => 'List CallBack items',
 		'action' => array(
 			'controller' => 'index',
 		),

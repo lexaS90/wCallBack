@@ -2,16 +2,7 @@
 
 $plugins = array();
 
-$tmp = array(/*
-	'wCallBack' => array(
-		'file' => 'wcallback',
-		'description' => '',
-		'events' => array(
-			'OnManagerPageInit' => array()
-		)
-	)
-	*/
-);
+$tmp = array();
 
 foreach ($tmp as $k => $v) {
 	/* @avr modplugin $plugin */

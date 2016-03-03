@@ -16,7 +16,7 @@ class wCallBack {
 		$this->modx =& $modx;
 
 		$corePath = $this->modx->getOption('wcallback_core_path', $config, $this->modx->getOption('core_path') . 'components/wcallback/');
-		$assetsUrl = $this->modx->getOption('wcallback_assets_url', $config, $this->modx->getOption('assets_url') . 'components/wcallback/');
+		$assetsUrl = $this->modx->getOption('wcallback_assets_url', $config, $this->modx->getOption('assets_url') . 'components/wcallback/');/*var_dump($assetsUrl);exit();*/
 		$connectorUrl = $assetsUrl . 'connector.php';
 
 		$this->config = array_merge(array(

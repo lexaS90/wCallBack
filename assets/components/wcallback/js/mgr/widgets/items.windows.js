@@ -29,6 +29,13 @@ Ext.extend(wCallBack.window.CreateItem, MODx.Window, {
 			anchor: '99%',
 			allowBlank: true,
 		}, {
+			xtype: 'textarea',
+			fieldLabel: _('wcallback_item_description'),
+			name: 'description',
+			id: config.id + '-description',
+			anchor: '99%',
+			allowBlank: true,
+		}, {
 			xtype: 'textfield',
 			fieldLabel: _('wcallback_item_mail'),
 			name: 'mail',
@@ -99,11 +106,18 @@ Ext.extend(wCallBack.window.UpdateItem, MODx.Window, {
 			id: config.id + '-name',
 			anchor: '99%',
 			allowBlank: false,
-		},  {
+		}, {
 			xtype: 'textfield',
-			fieldLabel: _('wcallback_item_mail'),
-			name: 'mail',
-			id: config.id + '-mail',
+			fieldLabel: _('wcallback_item_name'),
+			name: 'name',
+			id: config.id + '-name',
+			anchor: '99%',
+			allowBlank: false,
+		}, {
+			xtype: 'textarea',
+			fieldLabel: _('wcallback_item_description'),
+			name: 'description',
+			id: config.id + '-description',
 			anchor: '99%',
 			allowBlank: true,
 		}, {

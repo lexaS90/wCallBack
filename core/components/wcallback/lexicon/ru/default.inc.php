@@ -7,7 +7,8 @@ $_lang['wcallback_intro_msg'] = 'Вы можете выделять сразу �
 
 $_lang['wcallback_items'] = 'Заявки';
 $_lang['wcallback_item_id'] = 'Id';
-$_lang['wcallback_item_name'] = 'Название';
+$_lang['wcallback_item_name'] = 'Имя';
+$_lang['wcallback_item_description'] = 'Описание';
 $_lang['wcallback_item_mail'] = 'Email';
 $_lang['wcallback_item_phone'] = 'Телефон';
 $_lang['wcallback_item_date'] = 'Дата';
@@ -16,15 +17,15 @@ $_lang['wcallback_item_active'] = 'Активно';
 
 $_lang['wcallback_item_create'] = 'Создать заявку';
 $_lang['wcallback_item_update'] = 'Изменить заявку';
-$_lang['wcallback_item_enable'] = 'Включить заявку';
-$_lang['wcallback_items_enable'] = 'Включить заявку';
-$_lang['wcallback_item_disable'] = 'Отключить заявку';
-$_lang['wcallback_items_disable'] = 'Отключить заявки';
+$_lang['wcallback_item_enable'] = 'Обработано';
+$_lang['wcallback_items_enable'] = 'Все обработано';
+$_lang['wcallback_item_disable'] = 'Не обработано';
+$_lang['wcallback_items_disable'] = 'Все не обработано';
 $_lang['wcallback_item_remove'] = 'Удалить заявку';
 $_lang['wcallback_items_remove'] = 'Удалить заявки';
 $_lang['wcallback_item_remove_confirm'] = 'Вы уверены, что хотите удалить эту заявку?';
 $_lang['wcallback_items_remove_confirm'] = 'Вы уверены, что хотите удалить эти заявки?';
-$_lang['wcallback_item_active'] = 'Включено';
+$_lang['wcallback_item_active'] = 'Статус';
 
 $_lang['wcallback_item_err_name'] = 'Вы должны указать имя заявки';
 $_lang['wcallback_item_err_ae'] = 'Заявки с таким именем уже существует.';

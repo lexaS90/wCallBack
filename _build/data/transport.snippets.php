@@ -2,7 +2,12 @@
 
 $snippets = array();
 
-$tmp = array();
+$tmp = array(
+	'wcallbackSave' => array(
+		'file' => 'wcallbackSave',
+		'description' => 'Save item',
+	),
+);
 
 foreach ($tmp as $k => $v) {
 	/* @avr modSnippet $snippet */

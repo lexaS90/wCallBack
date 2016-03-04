@@ -28,3 +28,5 @@ class wCallBackItemCreateProcessor extends modObjectCreateProcessor {
 }
 
 return 'wCallBackItemCreateProcessor';
+//var_dump($this->getProperties());exit();
+//return $this->getProperties();

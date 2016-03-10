@@ -27,7 +27,7 @@ $_lang['wcallback_item_remove_confirm'] = 'Вы уверены, что хоти�
 $_lang['wcallback_items_remove_confirm'] = 'Вы уверены, что хотите удалить эти заявки?';
 $_lang['wcallback_item_active'] = 'Статус';
 
-$_lang['wcallback_item_err_name'] = 'Вы должны указать имя заявки';
+$_lang['wcallback_item_err_name'] = 'Вы должны указать имя';
 $_lang['wcallback_item_err_ae'] = 'Заявки с таким именем уже существует.';
 $_lang['wcallback_item_err_nf'] = 'Заявка не найдена';
 $_lang['wcallback_item_err_ns'] = 'Заявка не указана';

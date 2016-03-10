@@ -1,14 +1,14 @@
 <?php
+$wcallback = $modx->getService('wcallback','wcallback',$modx->getOption('wcallback_core_path').'model/wcallback/');
+
 $processorProps = array(
-    'name' => 'vasia4',
-	'description' => 'test',
-	'mail' => '',
-	'phone' => '',
-	'category' => '',
+    'name' => $hook->getValue('name'),
+	'description' => $hook->getValue('description'),
+	'mail' => $hook->getValue('email'),
+	'phone' =>  $hook->getValue('phone'),
+	'category' => 't',
 	'active' => 1,
 );
-
-$wcallback = $modx->getService('wcallback','wcallback',$modx->getOption('wcallback_core_path').'model/wcallback/');
 
 $w = $modx->newObject('wCallBackItem',1);
 
@@ -18,7 +18,7 @@ $w->save();
 
 
 
-var_dump($w);
+return true;
 
 
 /*

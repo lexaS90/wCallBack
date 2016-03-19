@@ -182,7 +182,7 @@ Ext.extend(wCallBack.grid.Items, MODx.grid.Grid, {
 	},
 
 	getFields: function (config) {
-		return ['id', 'name', 'mail', 'description', 'phone', 'category', 'active', 'actions'];
+		return ['id', 'name', 'mail', 'phone', 'date', 'category', 'active', 'actions'];
 	},
 
 	getColumns: function (config) {
@@ -195,13 +195,8 @@ Ext.extend(wCallBack.grid.Items, MODx.grid.Grid, {
 			header: _('wcallback_item_name'),
 			dataIndex: 'name',
 			sortable: true,
-			width: 100,
-		}, {
-			header: _('wcallback_item_description'),
-			dataIndex: 'description',
-			sortable: true,
 			width: 200,
-		},{
+		}, {
 			header: _('wcallback_item_mail'),
 			dataIndex: 'mail',
 			sortable: true,
@@ -209,6 +204,11 @@ Ext.extend(wCallBack.grid.Items, MODx.grid.Grid, {
 		}, {
 			header: _('wcallback_item_phone'),
 			dataIndex: 'phone',
+			sortable: true,
+			width: 150,
+		}, {
+			header: _('wcallback_item_date'),
+			dataIndex: 'date',
 			sortable: true,
 			width: 150,
 		}, {

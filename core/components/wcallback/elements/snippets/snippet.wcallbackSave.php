@@ -1,5 +1,5 @@
 <?php
-$wcallback = $modx->getService('wcallback','wcallback',$modx->getOption('wcallback_core_path').'model/wcallback/');
+/*$wcallback = $modx->getService('wcallback','wcallback',$modx->getOption('wcallback_core_path').'model/wcallback/');
 
 $processorProps = array(
     'name' => $hook->getValue('name'),
@@ -18,15 +18,27 @@ $w->save();
 
 
 
-return true;
+return true;*/
 
 
-/*
+$wcallback = $modx->getService('wcallback','wcallback',$modx->getOption('wcallback_core_path').'model/wcallback/');
+
+$processorProps = array(
+    'name' => 'vasia',
+	'email' => 'vasia@mail.ru',
+);
+
+
 $otherProps = array(
     
     'processors_path' =>$modx->getOption('base_path').'wCallBack/core/components/wcallback/processors/'
 );
 
-$response = $modx->runProcessor('mgr/item/create.class', $processorProps, $otherProps);
+$response = $modx->runProcessor('mgr/item/create', $_POST, $otherProps);
 
-echo ($response->response);*/
+if ($response->isError()) {
+    echo $response->getMessage();
+    $hook->addError('process_error', $response->getMessage());
+    return false;
+}
+return true;

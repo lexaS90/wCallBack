@@ -17,7 +17,10 @@ class wCallBackItemCreateProcessor extends modObjectCreateProcessor {
 		$name = trim($this->getProperty('name'));
 		if (empty($name)) {
 			$this->modx->error->addField('name', $this->modx->lexicon('wcallback_item_err_name'));
-		}		
+		}
+
+
+		$this->setProperties(array('date' => date("Y-m-d")));
 
 		return parent::beforeSet();
 	}

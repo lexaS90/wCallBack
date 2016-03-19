@@ -7,8 +7,9 @@
 		<field key="description" dbtype="text" phptype="text" null="true" default=""/>
 		<field key="mail" dbtype="varchar" precision="100" phptype="string" null="true" default=""/>
 		<field key="phone" dbtype="varchar" precision="100" phptype="string" null="true" default=""/>
+		<field key="date" dbtype="date" phptype="date" null="true" />
 		<field key="category" dbtype="varchar" precision="100" phptype="string" null="true" default=""/>
-		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" null="true" default="1"/>
+		<field key="active" dbtype="tinyint" precision="1" phptype="boolean" null="true" default="0"/>
 
 		<index alias="name" name="name" primary="false" unique="false" type="BTREE">
 			<column key="name" length="" collation="A" null="false"/>

@@ -58,10 +58,10 @@ Ext.extend(wCallBack.window.CreateItem, MODx.Window, {
 			allowBlank: true,
 		}, {
 			xtype: 'xcheckbox',
+			checked: false,
 			boxLabel: _('wcallback_item_active'),
 			name: 'active',
-			id: config.id + '-active',
-			checked: true,
+			id: config.id + '-active',		
 		}];
 	},
 
@@ -118,6 +118,13 @@ Ext.extend(wCallBack.window.UpdateItem, MODx.Window, {
 			fieldLabel: _('wcallback_item_description'),
 			name: 'description',
 			id: config.id + '-description',
+			anchor: '99%',
+			allowBlank: true,
+		}, {
+			xtype: 'textfield',
+			fieldLabel: _('wcallback_item_mail'),
+			name: 'mail',
+			id: config.id + '-mail',
 			anchor: '99%',
 			allowBlank: true,
 		}, {

@@ -10,8 +10,9 @@ $xpdo_meta_map['wCallBackItem']= array (
     'description' => '',
     'mail' => '',
     'phone' => '',
+    'date' => NULL,
     'category' => '',
-    'active' => 1,
+    'active' => 0,
   ),
   'fieldMeta' => 
   array (
@@ -46,6 +47,12 @@ $xpdo_meta_map['wCallBackItem']= array (
       'null' => true,
       'default' => '',
     ),
+    'date' => 
+    array (
+      'dbtype' => 'date',
+      'phptype' => 'date',
+      'null' => true,
+    ),
     'category' => 
     array (
       'dbtype' => 'varchar',
@@ -60,7 +67,7 @@ $xpdo_meta_map['wCallBackItem']= array (
       'precision' => '1',
       'phptype' => 'boolean',
       'null' => true,
-      'default' => 1,
+      'default' => 0,
     ),
   ),
   'indexes' => 

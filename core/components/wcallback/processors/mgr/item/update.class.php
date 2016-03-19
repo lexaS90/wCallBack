@@ -37,7 +37,7 @@ class wCallBackItemUpdateProcessor extends modObjectUpdateProcessor {
 
 		if (empty($name)) {
 			$this->modx->error->addField('name', $this->modx->lexicon('wcallback_item_err_name'));
-		}		
+		}
 
 		return parent::beforeSet();
 	}

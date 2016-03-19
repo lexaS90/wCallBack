@@ -76,7 +76,7 @@ if ($object->xpdo) {
 
         case xPDOTransport::ACTION_UNINSTALL:
             // Remove tables if it's need
-            /*
+            
             $modelPath = $modx->getOption('wcallback_core_path', null, $modx->getOption('core_path') . 'components/wcallback/') . 'model/';
             $modx->addPackage('wcallback', $modelPath);
 
@@ -97,7 +97,6 @@ if ($object->xpdo) {
             foreach ($objects as $tmp) {
                 $manager->removeObjectContainer($tmp);
             }
-            */
             break;
     }
 }

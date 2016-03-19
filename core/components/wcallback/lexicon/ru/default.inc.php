@@ -2,8 +2,8 @@
 include_once 'setting.inc.php';
 
 $_lang['wcallback'] = 'wCallBack';
-$_lang['wcallback_menu_desc'] = 'Пример расширения для разработки.';
-$_lang['wcallback_intro_msg'] = 'Вы можете выделять сразу несколько предметов при помощи Shift или Ctrl.';
+$_lang['wcallback_menu_desc'] = 'Журнал обратной связи';
+$_lang['wcallback_intro_msg'] = 'Вы можете выделять сразу несколько заявок при помощи Shift или Ctrl.';
 
 $_lang['wcallback_items'] = 'Заявки';
 $_lang['wcallback_item_id'] = 'Id';
